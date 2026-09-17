@@ -21,3 +21,31 @@ AstraRAG is an agentic Retrieval‑Augmented Generation (RAG) chatbot that answe
 🔌 FastAPI Backend – Separates RAG logic from the UI; can be reused by other clients.
 
 📥 Simple Ingestion Pipeline – Drop PDFs into a folder and run one command.
+
+
+🏗️ Architecture
+
+┌─────────────────┐      HTTP POST       ┌──────────────────────┐
+│  Streamlit UI   │  ─────────────────▶  │   FastAPI Backend    │
+│  (frontend)     │                      │   /chat/answer       │
+└─────────────────┘                      └──────────┬───────────┘
+                                                    │
+                                                    ▼
+                                         ┌──────────────────────┐
+                                         │   CrewAI Agent       │
+                                         │  (Question Answer)   │
+                                         └──────────┬───────────┘
+                                                    │ calls
+                                                    ▼
+                                         ┌──────────────────────┐
+                                         │  rag_query_tool      │
+                                         │  (vector retrieval + │
+                                         │   LLM synthesis)     │
+                                         └──────────┬───────────┘
+                                                    │
+                                                    ▼
+                                         ┌──────────────────────┐
+                                         │   ChromaDB +         │
+                                         │   HuggingFace        │
+                                         │   Embeddings         │
+                                         └──────────────────────┘
