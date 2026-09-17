@@ -28,9 +28,7 @@ AstraRAG is an agentic Retrieval‑Augmented Generation (RAG) chatbot that answe
 Type a question like:
 
 "What is an ecosystem?"
-
 "Explain the difference between evolution and ecosystem."
-
 "Summarise chapter 3."
 
 Read the grounded answer.
