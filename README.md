@@ -25,15 +25,17 @@ AstraRAG is an agentic Retrieval‑Augmented Generation (RAG) chatbot that answe
 
 🧪 Usage
 
-Type a question like:
+1. Type a question like:
 
 "What is an ecosystem?"
+
 "Explain the difference between evolution and ecosystem."
+
 "Summarise chapter 3."
 
-Read the grounded answer.
+2. Read the grounded answer.
 
-Expand 🔍 Show details (tool & rationale) to see:
+3. Expand 🔍 Show details (tool & rationale) to see:
 
 Which tool was used (rag_query_tool)
 
@@ -41,13 +43,8 @@ The agent's reasoning
 
 The source files cited
 
-Follow‑up questions retain the conversation context.
+4. Follow‑up questions retain the conversation context.
 
 
 
 
-COLLECTION_NAME=astra_docs
-
-# Frontend
-
-CHAT_ENDPOINT_URL=http://localhost:8000/chat/answer
