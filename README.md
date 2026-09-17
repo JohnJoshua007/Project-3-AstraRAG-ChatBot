@@ -28,4 +28,5 @@ AstraRAG is an agentic Retrieval‑Augmented Generation (RAG) chatbot that answe
 1. Clone the repository
 
 git clone https://github.com/JohnJoshua007/Project-3-AstraRAG-ChatBot.git
+
 cd Project-3-AstraRAG-ChatBot
