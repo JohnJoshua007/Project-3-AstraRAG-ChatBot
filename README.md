@@ -23,42 +23,30 @@ AstraRAG is an agentic Retrieval‑Augmented Generation (RAG) chatbot that answe
 📥 Simple Ingestion Pipeline – Drop PDFs into a folder and run one command.
 
 
-🚀 Quick Start
+🧪 Usage
 
-1. Clone the repository
+Type a question like:
 
-git clone https://github.com/JohnJoshua007/Project-3-AstraRAG-ChatBot.git
+"What is an ecosystem?"
 
-cd Project-3-AstraRAG-ChatBot
+"Explain the difference between evolution and ecosystem."
+
+"Summarise chapter 3."
+
+Read the grounded answer.
+
+Expand 🔍 Show details (tool & rationale) to see:
+
+Which tool was used (rag_query_tool)
+
+The agent's reasoning
+
+The source files cited
+
+Follow‑up questions retain the conversation context.
 
 
-2. Create a virtual environment
 
-python -m venv .venv
-
-.\.venv\Scripts\activate         # Windows
-
-source .venv/bin/activate        # Linux / macOS
-
-
-3. Install dependencies
-
-pip install -r requirements.txt
-
-
-4. Set up environment variables
-
-Create a .env file in the project root:
-
-# Groq API
-
-GROQ_API_KEY=your_groq_api_key_here
-
-# Document ingestion
-
-DOCUMENTS_DIR=./data
-
-VECTOR_STORE_DIR=./doc_vector_store
 
 COLLECTION_NAME=astra_docs
 
